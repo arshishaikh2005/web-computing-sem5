@@ -1,0 +1,76 @@
+/* === Global Base Styles === */
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1e293b; /* neutral dark text */
+  background-color: #f8fafc; /* light background */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Links === */
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0f3ec4;
+}
+
+/* === Page Layout === */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0e7ff, #fef9c3);
+}
+
+/* === Headings === */
+h1 {
+  font-size: 2.4em;
+  line-height: 1.2;
+}
+
+/* === Buttons (Base style) === */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #0f3ec4;
+  transform: translateY(-1px);
+}
+
+button:focus {
+  outline: 3px solid rgba(29, 78, 216, 0.4);
+  outline-offset: 2px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}

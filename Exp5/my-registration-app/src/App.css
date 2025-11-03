@@ -1,0 +1,102 @@
+/* === Root and Page Layout === */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-page background and center alignment */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff, #fef9c3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Container === */
+.container {
+  width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in;
+}
+
+/* === Headings === */
+h1 {
+  margin-bottom: 10px;
+  color: #1d4ed8;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* === Form Elements === */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1d4ed8;
+  outline: none;
+  box-shadow: 0 0 4px rgba(29, 78, 216, 0.3);
+}
+
+/* === Button === */
+button {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #0f3ec4;
+  transform: translateY(-1px);
+}
+
+/* === Success Message === */
+.success {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #dcfce7;
+  border: 1px solid #16a34a;
+  border-radius: 8px;
+  color: #166534;
+  animation: fadeIn 0.4s ease-in;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
